@@ -1,0 +1,23 @@
+<main>
+    <div class="p-5 mb-4 bg-light rounded-3">
+        <div class="container-fluid py-5">
+            <h3> Novo Log: </h3>
+            <div class="card">
+                <div class="card-body">
+                    <form action="/rota_logs/logs/nova" method="POST">
+                        <label for="nome">Nome: </label>
+                        <input type="text" id="título" name="título" placeholder="Digite o título da Log"
+                            class="form-control">
+                        <br>
+                        <label for="conteudo">Descrição: </label>
+                        <input type="text" id="conteudo" name="conteudo" placeholder="Digite a conteúdo da Log"
+                            class="formcontrol">
+                        <br>
+                        <button type="submit" class="btn btn-success">Cadastrar
+                            Log</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

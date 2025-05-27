@@ -1,0 +1,24 @@
+<main>
+    <div class="p-5 mb-4 bg-light rounded-3">
+        <div class="container-fluid py-5">
+            <h3> Editar Logs: </h3>
+            <div class="card">
+                <div class="card-body">
+                    <form action="/rota_logs/logs/editar_logs" method="POST">
+                        {{#if log}}
+                        <label for="_id">ID: </label>
+                        <input type="text" id="_id" name="_id" readonly="true" class="form-control"
+                            value="{{log._id}}"><br>
+                        <label for="titulo">Título: </label>
+                        <input type="text" id="titulo" name="titulo" class="form-control" value="{{log.titulo}}"><br>
+                        <label for="conteudo">Descrição: </label>
+                        <input type="text" id="conteudo" name="conteudo" class="form-control"
+                            value="{{log.conteudo}}"><br>
+                        <button type="submit" class="btn btnsuccess">Editar log</button>
+                    </form>
+                    {{/if}}
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
