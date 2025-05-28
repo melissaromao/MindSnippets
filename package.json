@@ -3,13 +3,13 @@
     "body-parser": "^2.2.0",
     "express": "^5.1.0",
     "express-handlebars": "^8.0.1",
-    "mongoose": "^8.15.1"
+    "mongoose": "^8.15.1",
+    "tailwind": "^4.0.0"
   },
   "name": "mylog",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
