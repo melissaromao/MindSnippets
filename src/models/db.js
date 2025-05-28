@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 mongoose.Promise = global.Promise;
-const url = "mongodb://127.0.0.1/tarefa"
+const url = "mongodb://localhost:27017/MyLog"
 mongoose.connect(url).then(() => {
     console.log("✅ MongoBD Conectado...")
 }).catch((err) => {
