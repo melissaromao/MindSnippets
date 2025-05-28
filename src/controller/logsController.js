@@ -2,7 +2,7 @@ const express = require('express')
 const router = express.Router();
 const mongoose = require("mongoose");
 
-require("../models/Logs");
+require("../models/logs");
 const Logs = mongoose.model("logs");
 
 router.get('/logs', (req, res) => {
@@ -28,11 +28,11 @@ router.post('/logs/novo', (req, res) => {
     });
 });
 
-router.post('/editar_logs/:id', (req, res) => {
+router.get('/editar_logs/:id', (req, res) => {
     Logs.findOne({
         _id: req.params.id
     }).lean().then((logs) => {
-        res.render("admin/logs/editlogs", { logs: logs });
+        res.render("admin/logs/editlogs", { log: logs });
     });
 });
 
