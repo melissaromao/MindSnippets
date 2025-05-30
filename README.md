@@ -1,1 +1,2 @@
-# MyLog
+# Mind Snippets
+Anote ideias soltas rapidamente.
