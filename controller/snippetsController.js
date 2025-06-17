@@ -2,7 +2,7 @@ const express = require('express')
 const router = express.Router();
 const mongoose = require("mongoose");
 
-require("../models/snippets");
+require("../model/snippets");
 const Snippets = mongoose.model("snippets");
 
 router.get('/snippets', (req, res) => {
