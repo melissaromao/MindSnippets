@@ -13,5 +13,5 @@ app.set('view engine', 'handlebars');
 app.use('/rota_snippets', rota_snippets);
 const PORT = 8081;
 app.listen(PORT, () => {
-    console.log("Servidor Rodando");
+    console.log('Servidor Rodando em http://localhost:8081/rota_snippets/snippets/add');
 });
