@@ -3,7 +3,7 @@ const handlebars = require('express-handlebars');
 const bodyParser = require('body-parser');
 const path = require('path');
 const app = express();
-const rota_snippets = require('./controller/snippetsController');
+const rota_snippets = require('./controllers/snippetsController');
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
